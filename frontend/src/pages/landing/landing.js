@@ -2,8 +2,9 @@ import React from 'react';
 import Logo from '../../images/landing.svg';
 import {Link} from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
+import '../../globalStyle/style.css';
 
-import './style.css';
+import './landing.css';
 
 export default function Landing(){
     return(
