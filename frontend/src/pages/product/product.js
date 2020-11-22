@@ -2,24 +2,17 @@ import React, { useState, useEffect} from 'react';
 import Header from '../../components/header/header';
 import api from '../../services/api';
 import { FiSearch } from 'react-icons/fi';
-import axios from 'axios';
-
-
-
+// import axios from 'axios';
 
 import './style.css';
 import '../../globalStyle/style.css';
-
-
-
-
 
 export default function Product(){
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        api.get("http://localhost:3333/products")
+        api.get('/products')
           .then((response) => {
             console.log(response);
             setProducts(response.data);

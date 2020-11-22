@@ -1,10 +1,8 @@
 // conexao do front end com backend
-import axios from 'axios';
+const axios = require('axios').default;
 
 const api = axios.create({
-    baseUrl: 'http://localhost:3333',
-  
+    baseURL: 'http://localhost:3333',
 });
-
 
 export default api;
