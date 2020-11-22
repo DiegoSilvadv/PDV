@@ -7,3 +7,10 @@
 <h4 align="center"> 
 	🚧 Em construção... 🚧
 </h4>
+
+### Features
+
+- [x] Listagem de produtos
+- [ ] Listagem de clientes
+- [ ] Listagem de orçamentos
+- [ ] Criar orçamento
