@@ -1,0 +1,31 @@
+.content .container .header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: #3D7AFD;   
+}
+
+.content .container .header .arrow {
+    width: 50px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .container .header .arrow a {
+    background: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.content .container .header .arrow a:hover{
+    background: #2F69E7;
+}

@@ -1,24 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArchive, FiShoppingCart, FiUsers, FiArrowLeft } from "react-icons/fi";
+import { FiArchive, FiShoppingCart, FiUsers } from "react-icons/fi";
+import Header from '../../components/header/header';
 
 import './style.css';
 import '../../globalStyle/style.css';
-
-
-
 
 export default function Home() {
     return(
         <div class="content">
             <div class="container">
-                <div class="header">
-                    <div class="arrow">
-                        <Link to="/landing">
-                            <FiArrowLeft size={20} color="#262626" />
-                        </Link> 
-                    </div> 
-                </div>
+                <Header />
 
                 <div class="main">
                     <div class="content-wrapper">
