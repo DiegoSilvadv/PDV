@@ -1,13 +1,16 @@
-.content .container .header {
+.header {
     width: 100%;
     height: 50px;
     position: fixed;
     top:0;
     left: 0;
     background: #3D7AFD;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.content .container .header .arrow {
+.header .arrow {
     width: 50px;
     height: 50px;
     
@@ -16,7 +19,7 @@
     align-items: center;
 }
 
-.content .container .header .arrow a {
+.header .arrow a {
     background: none;
     width: 50px;
     height: 50px;
@@ -26,6 +29,14 @@
 
     cursor: pointer;
 }
-.content .container .header .arrow a:hover{
+.header .arrow a:hover{
     background: #2F69E7;
 }
+
+.header .logo {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

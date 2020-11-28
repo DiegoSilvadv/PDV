@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../images/landing.svg';
+import Land from '../../images/landing.svg';
 import {Link} from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import '../../globalStyle/style.css';
@@ -11,7 +11,7 @@ export default function Landing(){
         <div className="content" >
             <div className="container">
                 <header>
-                    <img src={Logo} alt="landing"></img>
+                    <img src={Land} alt="landing"></img>
                 </header>
                 <main>
                     <h1>Bem vindo ao PDV!</h1>
