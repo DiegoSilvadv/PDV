@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container .customers {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .customers .wrapper {
+    width: 90%;
+    height: 100px;
+}
+
+.container .customers .wrapper fieldset { 
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+    border-top: 1px solid rgba(208, 208, 208, 0.79);
+}
+
+.container .customers .wrapper input {
+    height: 30px;
+    width: 100%;
+    display: inline;
+    padding: 0;
+
+    border: 1px solid #262626;
+    border-radius: 5px;
+}
+
+.container .customers .customer {
+    width: 90%;
+
+    margin-bottom: 19px;
+    background-color: #ffffff;
+    border: 1px solid #3D7AFD;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    font-size: 12px;
+    color: #262626;
+}
+
+
+.container .customers .customer p {
+    margin: 10px;
+}

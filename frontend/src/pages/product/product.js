@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import Header from '../../components/header/header';
 import api from '../../services/api';
-import { FiSearch } from 'react-icons/fi';
+// import { FiSearch } from 'react-icons/fi';
 // import axios from 'axios';
 
 import './style.css';
@@ -22,8 +22,6 @@ export default function Product(){
           .catch((error) => console.log(error));
       }, []);
 
-      
-      
     return(
             <div className="container">
                 <Header />
@@ -51,7 +49,7 @@ export default function Product(){
                                     <p>QTD promo: 10</p>
                                     <p>Valor promo:4</p>
                                 </div>                 
-                            ) : products.filter(product => product.produto === seachProduct || product.id == seachProduct ).map(product => (
+                            ) : products.filter(product => product.produto === seachProduct || product.id === seachProduct ).map(product => (
                                     <div className="product" key={product.id} >
                                         <p>ID: { product.id } </p>
                                         <p>Descrição: {product.produto} </p>
@@ -71,20 +69,19 @@ export default function Product(){
     
 }
 
-
-{/* 
-// products.filter(product => product.produto == seachProduct || seachProduct !== product.id ).map(product => (
-//     <div className="product" key={product.id} >
-//         <p>ID: { product.id } </p>
-//         <p>Descrição: {product.produto} </p>
-//         <p>valor venda: {product.valor_venda}</p>
-//         <p>Estoque: {product.estoque}</p>
-//         <p>Fator: {product.fator}</p>
-//         <p>QTD promo: 10</p>
-//         <p>Valor promo:4</p>
+// {/* 
+// // products.filter(product => product.produto == seachProduct || seachProduct !== product.id ).map(product => (
+// //     <div className="product" key={product.id} >
+// //         <p>ID: { product.id } </p>
+// //         <p>Descrição: {product.produto} </p>
+// //         <p>valor venda: {product.valor_venda}</p>
+// //         <p>Estoque: {product.estoque}</p>
+// //         <p>Fator: {product.fator}</p>
+// //         <p>QTD promo: 10</p>
+// //         <p>Valor promo:4</p>
         
-//     </div>     
-// ))  */}
+// //     </div>     
+// // ))  */}
 
 
 // {/* <div className="buttons"> */}

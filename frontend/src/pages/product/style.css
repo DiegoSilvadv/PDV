@@ -39,21 +39,6 @@ body {
     border-radius: 5px;
 }
 
-.container .products .wrapper button {
-    width: 30px;
-    height: 30px;
-    background: #80ECFF;
-   
-    margin-left: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border: none;
-    border-radius: 5px;
-}
-
 .container .products .product {
     width: 90%;
     height: 200px;

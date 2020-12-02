@@ -7,11 +7,17 @@ var corsOptions = {
 }
 
 const ProductController = require('./app/controllers/ProductController');
+const CustomerController = require('./app/controllers/CustomerController');
 
 
 const routes = express.Router();
 
 routes.get('/products', cors(corsOptions), ProductController.index);
 routes.post('/products', cors(corsOptions), ProductController.store);
+
+
+routes.get('/customers', cors(corsOptions), CustomerController.index);
+routes.post('/customers', cors(corsOptions), CustomerController.store);
+
 
 module.exports = routes;

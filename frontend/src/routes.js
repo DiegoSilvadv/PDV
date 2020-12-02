@@ -15,7 +15,7 @@ function Routes(){
                 <Route path="/" exact component={Home}/>
                 <Route path="/landing" component={Landing} />
                 <Route path="/produtos" component={ Product } />
-                <Route path="/customer" component={ Customer } />
+                <Route path="/clientes" component={ Customer } />
                 <Route path="/budget" component={ Budget } />
             </Switch>
         </BrowserRouter>

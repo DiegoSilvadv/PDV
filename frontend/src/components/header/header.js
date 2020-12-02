@@ -9,7 +9,7 @@ export default function Header(){
     return(
         <div className="header">
             <div className="arrow">
-                <Link to="/landing">
+                <Link to="/">
                     <FiArrowLeft size={20} color="#ffffff" />
                 </Link> 
             </div> 
