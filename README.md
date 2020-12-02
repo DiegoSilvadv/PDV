@@ -14,3 +14,4 @@
 - [x] Listagem de clientes
 - [ ] Listagem de orçamentos
 - [ ] Criar orçamento
+- [ ] Sincronia com banco de dados local
