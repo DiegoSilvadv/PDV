@@ -11,6 +11,6 @@
 ### Features
 
 - [x] Listagem de produtos
-- [ ] Listagem de clientes
+- [x] Listagem de clientes
 - [ ] Listagem de orçamentos
 - [ ] Criar orçamento
