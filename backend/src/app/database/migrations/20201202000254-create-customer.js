@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.createTable('clientes', {
       id:{
         type: Sequelize.INTEGER,
-        allowNull: true,
+        allowNull: false,
         autoIncrement: true,
         primaryKey: true
       },
@@ -63,21 +63,9 @@ module.exports = {
       }
      
     })
-    
-
-
-
-
-
-
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
+    return queryInterface.dropTable('clientes');
   }
 };

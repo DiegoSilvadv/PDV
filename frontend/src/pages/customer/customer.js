@@ -21,7 +21,6 @@ function Customer() {
     }, []);
 
 
-
     return (
         <div className="container">
             <Header />
