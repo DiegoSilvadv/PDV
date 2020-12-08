@@ -31,7 +31,7 @@
     display: inline;
     padding: 0;
 
-    border: 1px solid #262626;
+    border: 1px solid rgba(208, 208, 208, 0.99);
     border-radius: 5px;
 }
 

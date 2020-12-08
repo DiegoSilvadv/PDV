@@ -8,13 +8,17 @@ var corsOptions = {
 
 const ProductController = require('./app/controllers/ProductController');
 const CustomerController = require('./app/controllers/CustomerController');
+const BudgetController = require('./app/controllers/BudgetController');
 
 
 const routes = express.Router();
 
+
+routes.get('/budgets', cors(corsOptions), BudgetController.index);
+routes.post('/budgets', cors(corsOptions), BudgetController.store);
+
 routes.get('/products', cors(corsOptions), ProductController.index);
 routes.post('/products', cors(corsOptions), ProductController.store);
-
 
 routes.get('/customers', cors(corsOptions), CustomerController.index);
 routes.post('/customers', cors(corsOptions), CustomerController.store);

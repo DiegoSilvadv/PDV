@@ -2,10 +2,11 @@ const Sequelize = require('sequelize');
 
 const Product = require('../models/Products');
 const Customer = require('../models/Customers');
+const Budget = require('../models/Budget');
 
 const db = require('../../config/database');
 
-const models = [Product, Customer];
+const models = [Product, Customer, Budget];
 
 
 class Database {

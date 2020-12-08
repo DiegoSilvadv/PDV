@@ -3,8 +3,8 @@ const Sequelize = require('sequelize');
 class Orcamento extends Sequelize.Model {
     static init(sequelize) {
         super.init({
-                idProduto: Sequelize.INTEGER,
-                idCliente: Sequelize.INTEGER,
+                id_produto: Sequelize.INTEGER,
+                id_cliente: Sequelize.INTEGER,
                 data_venda: Sequelize.DATE,
                 hora_venda: Sequelize.DATE,
                 valor_final: Sequelize.DECIMAL(18, 6),
@@ -17,6 +17,7 @@ class Orcamento extends Sequelize.Model {
                 situacao: Sequelize.STRING,
                 obs: Sequelize.STRING,
                 data_cancelamento: Sequelize.DATE,
+               
             }, 
             {
                 sequelize

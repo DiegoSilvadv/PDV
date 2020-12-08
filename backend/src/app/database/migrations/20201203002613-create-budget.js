@@ -9,7 +9,7 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true
       },
-      idProduto: {
+      id_produto: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -17,7 +17,7 @@ module.exports = {
           key: 'id'
         }
       },
-      idCliente: {
+      id_cliente: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -73,6 +73,14 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       },
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updated_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      }
 
     })
   },
