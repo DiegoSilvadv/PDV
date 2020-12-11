@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../../components/header/header';
 import api from '../../services/api';
-import { FiChevronUp, FiChevronDown, FiTrash, AiFillEdit } from 'react-icons/fi';
+import { FiChevronUp, FiChevronDown, FiTrash, FiEdit3 } from 'react-icons/fi';
 
 import '../../globalStyle/style.css';
 import './style.css';
 
 function Budget(){
+
+   
     return(
         <div className="container">
            <Header /> 
@@ -26,24 +28,25 @@ function Budget(){
                     <strong>ID do Pedido 1 </strong>
                     <div className="customer">
                         <strong>Cliente</strong>
-                        <p>Cliente: </p>
-                        <p>CPF/CNPJ: </p>
-                        <p>Endereço cliente: </p>
-                        <p>Fone cliente: </p>
-                            <button>
-                                <FiTrash size={20} color="#3d7afd" />
+                        <label>Cliente: </label> 
+                            <input type="text"></input>
+                        <label>CPF/CNPJ: </label> 
+                            <input type="text"></input>
+                        <label>Endereço cliente: </label> 
+                            <input type="text"></input>
+                        <label>Fone cliente: </label> 
+                            <input type="text"></input>
+                        <label>Observações: </label> 
+                            <input type="text"></input>
+                        <div className="buttons">                            
+                            <button >
+                                <FiEdit3 size={20} color="#3d7afd" />
                             </button>
-                            <button>
-                                <FiChevronUp size={20} color="#3d7afd" />
-                            </button>
+                        </div>   
                     </div>
 
                     <div className="top-itens">
-                        <strong>Itens da venda</strong>
-                        <small>Clique para esconder os produtos</small>    
-                        <button>
-                            <FiChevronUp size={20} color="#3d7afd" />
-                        </button>
+                        <strong>Itens da venda</strong>                         
                     </div>
 
                     <div className="budget-itens">
@@ -62,7 +65,7 @@ function Budget(){
                         <p>Item: </p>
                         <p>Quantidade: </p>
                         <p>Valor unitario: </p>
-                        <p>Cancelado: </p>
+                        <p>total: </p>
                             <button>
                                 <FiTrash size={20} color="#3d7afd" />
                             </button>
@@ -73,7 +76,7 @@ function Budget(){
                         <p>Item: </p>
                         <p>Quantidade: </p>
                         <p>Valor unitario: </p>
-                        <p>Cancelado: </p>
+                        <p>total: </p>
                             <button>
                                 <FiTrash size={20} color="#3d7afd" />
                             </button>
@@ -83,14 +86,14 @@ function Budget(){
                         <p>Item: </p>
                         <p>Quantidade: </p>
                         <p>Valor unitario: </p>
-                        <p>Cancelado: </p>
+                        <p>total: </p>
                             <button>
                                 <FiTrash size={20} color="#3d7afd" />
                             </button>
                     </div>
 
                     <div className="bottom">
-                    <p>Cancelado: </p>
+                        <p>Cancelado: </p>
                         <p>Obs: </p>
                         <p>Hora da venda:</p>
                         <p>Status da venda: </p>
@@ -98,8 +101,10 @@ function Budget(){
                         <p>Total item: 2 </p> 
                         <p>Valor produtos: 100R$ </p>
                     </div>
-
-                    <button id="final">Finalizar</button>
+                    <div className="footer-buttons">
+                        <button id="final">Finalizar</button>
+                        <button id="final">Cancelar</button>
+                    </div>
                 </div>
 
 

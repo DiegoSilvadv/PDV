@@ -16,6 +16,13 @@
     width: 90%;
     height: 100px;
 }
+button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container .budgets .wrapper fieldset {
     border-bottom: none;
@@ -51,19 +58,9 @@
 .container .budgets .budget .top-itens {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;   
-}
-.container .budgets .budget .top-itens button {
-    background: none;
-    border: none;
-    border-radius: 5px;
-    margin-left: -15%;
-
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;   
 }
 
 .container .budgets .budget p {
@@ -91,17 +88,34 @@
 }
 
 .container .budgets .budget .customer {
-    border-bottom: 1px solid #3d7afd;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.container .budgets .budget .customer button {
-    background: none;
-    border: none;
+.container .budgets .budget .customer label {
+    text-align: start;
+    width: 90%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.container .budgets .budget .customer input {
+    width: 90%;
+    height: 20px;    
+    border: 1px solid rgba(208, 208, 208, 0.99);
     border-radius: 5px;
 }
 
-.container .budgets .budget .bottom {
-    border-top: 1px solid #3d7afd;
+.container .budgets .budget .customer .buttons {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 10px 0 20px 0;
 }
 
 .container .budgets #final {
@@ -114,4 +128,17 @@
     color: #ffffff;
     font-weight: bold;
     background: #3d7afd; 
+}
+
+.container .budgets .bottom {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container .budgets .footer-buttons {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row; 
 }
